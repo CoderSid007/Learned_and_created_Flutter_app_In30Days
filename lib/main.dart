@@ -22,6 +22,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
             fontFamily: GoogleFonts.lato().fontFamily,
+        appBarTheme: AppBarTheme(
+          color: Colors.orangeAccent,
+
+          iconTheme: IconThemeData(color: Colors.black),
+          textTheme: Theme.of(context).textTheme,
+
+        )
 
       ),
 
@@ -29,7 +36,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
          debugShowCheckedModeBanner: false,
-         initialRoute: MyRoutes.loginRoute,
+         initialRoute: MyRoutes.homeRoute,
          routes: {
         "/" : (content)=> LoginPage(),
            MyRoutes.homeRoute : (content)=> HomePage(),

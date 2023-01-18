@@ -11,7 +11,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pseudocode"),
+
+        iconTheme: IconThemeData(
+          color: Colors.black,
+
+        ),
+        title: Text("Pseudocode",selectionColor: Colors.black,),
       ),
       body: Center(
         child: Container(
