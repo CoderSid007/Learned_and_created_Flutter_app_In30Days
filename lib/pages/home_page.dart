@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
           color: Colors.black,
 
         ),
-        title: Text("Pseudocode",selectionColor: Colors.black,),
+        title: Text("Pseudocode",),
       ),
       body: Center(
         child: Container(
